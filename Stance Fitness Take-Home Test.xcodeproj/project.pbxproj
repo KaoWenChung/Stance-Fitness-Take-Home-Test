@@ -10,7 +10,6 @@
 		212E56F92C74D918001A7A40 /* Stance_Fitness_Take_Home_TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E56F82C74D918001A7A40 /* Stance_Fitness_Take_Home_TestApp.swift */; };
 		212E56FD2C74D91D001A7A40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212E56FC2C74D91D001A7A40 /* Assets.xcassets */; };
 		212E57002C74D91D001A7A40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212E56FF2C74D91D001A7A40 /* Preview Assets.xcassets */; };
-		212E570A2C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57092C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestTests.swift */; };
 		212E57142C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57132C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestUITests.swift */; };
 		212E57162C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57152C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestUITestsLaunchTests.swift */; };
 		212E57262C74DAB5001A7A40 /* WorkoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57252C74DAB5001A7A40 /* WorkoutService.swift */; };
@@ -24,6 +23,10 @@
 		212E573C2C74E986001A7A40 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E573B2C74E986001A7A40 /* Workout.swift */; };
 		212E573F2C74E9B1001A7A40 /* WorkoutRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E573E2C74E9B1001A7A40 /* WorkoutRepository.swift */; };
 		212E57422C74EC95001A7A40 /* WorkoutDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57412C74EC95001A7A40 /* WorkoutDTO+Mapping.swift */; };
+		212E57452C74EE4E001A7A40 /* WorkoutListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57442C74EE4E001A7A40 /* WorkoutListViewModelTests.swift */; };
+		212E57482C74EEAE001A7A40 /* MockWorkoutRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57472C74EEAE001A7A40 /* MockWorkoutRepository.swift */; };
+		212E574A2C74EF23001A7A40 /* MockError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57492C74EF23001A7A40 /* MockError.swift */; };
+		212E574D2C74EF75001A7A40 /* WorkoutSet+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E574C2C74EF75001A7A40 /* WorkoutSet+Stub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +52,6 @@
 		212E56FC2C74D91D001A7A40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		212E56FF2C74D91D001A7A40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		212E57052C74D91D001A7A40 /* Stance Fitness Take-Home TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stance Fitness Take-Home TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		212E57092C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stance_Fitness_Take_Home_TestTests.swift; sourceTree = "<group>"; };
 		212E570F2C74D91D001A7A40 /* Stance Fitness Take-Home TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stance Fitness Take-Home TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		212E57132C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stance_Fitness_Take_Home_TestUITests.swift; sourceTree = "<group>"; };
 		212E57152C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stance_Fitness_Take_Home_TestUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -63,6 +65,10 @@
 		212E573B2C74E986001A7A40 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		212E573E2C74E9B1001A7A40 /* WorkoutRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRepository.swift; sourceTree = "<group>"; };
 		212E57412C74EC95001A7A40 /* WorkoutDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutDTO+Mapping.swift"; sourceTree = "<group>"; };
+		212E57442C74EE4E001A7A40 /* WorkoutListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListViewModelTests.swift; sourceTree = "<group>"; };
+		212E57472C74EEAE001A7A40 /* MockWorkoutRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWorkoutRepository.swift; sourceTree = "<group>"; };
+		212E57492C74EF23001A7A40 /* MockError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockError.swift; sourceTree = "<group>"; };
+		212E574C2C74EF75001A7A40 /* WorkoutSet+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutSet+Stub.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +144,9 @@
 		212E57082C74D91D001A7A40 /* Stance Fitness Take-Home TestTests */ = {
 			isa = PBXGroup;
 			children = (
-				212E57092C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestTests.swift */,
+				212E574B2C74EF67001A7A40 /* Stub */,
+				212E57462C74EEA7001A7A40 /* Mock */,
+				212E57442C74EE4E001A7A40 /* WorkoutListViewModelTests.swift */,
 			);
 			path = "Stance Fitness Take-Home TestTests";
 			sourceTree = "<group>";
@@ -228,6 +236,23 @@
 			path = DataMapping;
 			sourceTree = "<group>";
 		};
+		212E57462C74EEA7001A7A40 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				212E57492C74EF23001A7A40 /* MockError.swift */,
+				212E57472C74EEAE001A7A40 /* MockWorkoutRepository.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		212E574B2C74EF67001A7A40 /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				212E574C2C74EF75001A7A40 /* WorkoutSet+Stub.swift */,
+			);
+			path = Stub;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -302,6 +327,7 @@
 					};
 					212E57042C74D91D001A7A40 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 						TestTargetID = 212E56F42C74D918001A7A40;
 					};
 					212E570E2C74D91D001A7A40 = {
@@ -382,7 +408,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				212E570A2C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestTests.swift in Sources */,
+				212E574D2C74EF75001A7A40 /* WorkoutSet+Stub.swift in Sources */,
+				212E57452C74EE4E001A7A40 /* WorkoutListViewModelTests.swift in Sources */,
+				212E574A2C74EF23001A7A40 /* MockError.swift in Sources */,
+				212E57482C74EEAE001A7A40 /* MockWorkoutRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +624,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V66T46872F;
@@ -604,6 +634,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "owen.Stance-Fitness-Take-Home-TestTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stance Fitness Take-Home Test.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Stance Fitness Take-Home Test";
@@ -615,6 +646,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V66T46872F;
