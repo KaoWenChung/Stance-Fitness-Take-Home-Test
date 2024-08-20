@@ -11,24 +11,29 @@ struct WorkoutListView: View {
     @State var viewModel = WorkoutListViewModel()
     
     var body: some View {
-        NavigationView {
-            List(viewModel.workoutSets.indices, id: \.self) { index in
-                Section(header: Text("Set \(index + 1)")) {
-                    Text("??")
+        ZStack {
+            NavigationView {
+                List(viewModel.workoutSets.indices, id: \.self) { index in
+                    Section(header: Text("Set \(index + 1)")) {
+                        Text("??")
+                    }
+                }
+                .navigationTitle("Workout Sessions")
+                .task {
+                    await viewModel.getAllWorkoutData()
+                }
+                .alert(item: $viewModel.errorItem) { error in
+                    Alert(
+                        title: Text("Error"),
+                        message: Text(error.message),
+                        dismissButton: .default(Text("OK")) {
+                            viewModel.errorItem = nil
+                        }
+                    )
                 }
             }
-            .navigationTitle("Workout Sessions")
-            .task {
-                await viewModel.getAllWorkoutData()
-            }
-            .alert(item: $viewModel.errorItem) { error in
-                Alert(
-                    title: Text("Error"),
-                    message: Text(error.message),
-                    dismissButton: .default(Text("OK")) {
-                        viewModel.errorItem = nil
-                    }
-                )
+            if viewModel.isLoading {
+                LoadingView()
             }
         }
     }
