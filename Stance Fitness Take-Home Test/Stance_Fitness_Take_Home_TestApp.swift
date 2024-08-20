@@ -11,7 +11,7 @@ import SwiftUI
 struct Stance_Fitness_Take_Home_TestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WorkoutListView()
         }
     }
 }
