@@ -9,28 +9,23 @@ import Foundation
 
 @Observable
 final class WorkoutListViewModel {
-    private let workoutService: WorkoutService
+    private let workoutRepository: WorkoutRepository
     private(set) var workoutSets = [WorkoutSet]()
     private(set) var isLoading = false
     var errorItem: ErrorItem?
 
-    init(workoutService: WorkoutService = WorkoutAFServiceImpl()) {
-        self.workoutService = workoutService
+    init(workoutRepository: WorkoutRepository = WorkoutRepositoryImpl()) {
+        self.workoutRepository = workoutRepository
     }
 
     func getAllWorkoutData() async {
         isLoading = true
         defer { isLoading = false }
         do {
-            workoutSets = try await workoutService.getWorkoutData()
+            workoutSets = try await workoutRepository.getWorkoutData()
             errorItem = nil
         } catch {
             errorItem = .init(message:"Oops! Something went wrong: \(error.localizedDescription)")
         }
     }
-}
-
-struct ErrorItem: Identifiable {
-    let id = UUID()
-    let message: String
 }

@@ -9,13 +9,14 @@ import SwiftUI
 
 struct WorkoutListView: View {
     @State var viewModel = WorkoutListViewModel()
-    
+
     var body: some View {
         ZStack {
             NavigationView {
                 List(viewModel.workoutSets.indices, id: \.self) { index in
                     Section(header: Text("Set \(index + 1)")) {
                         LineGraphView(viewModel: .init(reps: viewModel.workoutSets[index].reps))
+                            .frame(height: 250)
                     }
                 }
                 .navigationTitle("Workout Sessions")
