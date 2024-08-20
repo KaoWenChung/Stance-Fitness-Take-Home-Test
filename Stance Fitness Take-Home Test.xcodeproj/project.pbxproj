@@ -8,12 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		212E56F92C74D918001A7A40 /* Stance_Fitness_Take_Home_TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E56F82C74D918001A7A40 /* Stance_Fitness_Take_Home_TestApp.swift */; };
-		212E56FB2C74D918001A7A40 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E56FA2C74D918001A7A40 /* ContentView.swift */; };
 		212E56FD2C74D91D001A7A40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212E56FC2C74D91D001A7A40 /* Assets.xcassets */; };
 		212E57002C74D91D001A7A40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212E56FF2C74D91D001A7A40 /* Preview Assets.xcassets */; };
-		212E570A2C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57092C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestTests.swift */; };
 		212E57142C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57132C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestUITests.swift */; };
 		212E57162C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57152C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestUITestsLaunchTests.swift */; };
+		212E57262C74DAB5001A7A40 /* WorkoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57252C74DAB5001A7A40 /* WorkoutService.swift */; };
+		212E57292C74DB6F001A7A40 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 212E57282C74DB6F001A7A40 /* Alamofire */; };
+		212E572C2C74E0D9001A7A40 /* WorkoutListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E572B2C74E0D9001A7A40 /* WorkoutListViewModel.swift */; };
+		212E572E2C74E334001A7A40 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E572D2C74E334001A7A40 /* LoadingView.swift */; };
+		212E57312C74E4C8001A7A40 /* LineGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57302C74E4C8001A7A40 /* LineGraphView.swift */; };
+		212E57342C74E607001A7A40 /* LineGraphViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57332C74E607001A7A40 /* LineGraphViewModel.swift */; };
+		212E57362C74E6C8001A7A40 /* WorkoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57352C74E6C8001A7A40 /* WorkoutListView.swift */; };
+		212E57392C74E875001A7A40 /* ErrorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57382C74E875001A7A40 /* ErrorItem.swift */; };
+		212E573C2C74E986001A7A40 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E573B2C74E986001A7A40 /* Workout.swift */; };
+		212E573F2C74E9B1001A7A40 /* WorkoutRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E573E2C74E9B1001A7A40 /* WorkoutRepository.swift */; };
+		212E57422C74EC95001A7A40 /* WorkoutDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57412C74EC95001A7A40 /* WorkoutDTO+Mapping.swift */; };
+		212E57452C74EE4E001A7A40 /* WorkoutListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57442C74EE4E001A7A40 /* WorkoutListViewModelTests.swift */; };
+		212E57482C74EEAE001A7A40 /* MockWorkoutRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57472C74EEAE001A7A40 /* MockWorkoutRepository.swift */; };
+		212E574A2C74EF23001A7A40 /* MockError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57492C74EF23001A7A40 /* MockError.swift */; };
+		212E574D2C74EF75001A7A40 /* WorkoutSet+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E574C2C74EF75001A7A40 /* WorkoutSet+Stub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +49,26 @@
 /* Begin PBXFileReference section */
 		212E56F52C74D918001A7A40 /* Stance Fitness Take-Home Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stance Fitness Take-Home Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		212E56F82C74D918001A7A40 /* Stance_Fitness_Take_Home_TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stance_Fitness_Take_Home_TestApp.swift; sourceTree = "<group>"; };
-		212E56FA2C74D918001A7A40 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		212E56FC2C74D91D001A7A40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		212E56FF2C74D91D001A7A40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		212E57052C74D91D001A7A40 /* Stance Fitness Take-Home TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stance Fitness Take-Home TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		212E57092C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stance_Fitness_Take_Home_TestTests.swift; sourceTree = "<group>"; };
 		212E570F2C74D91D001A7A40 /* Stance Fitness Take-Home TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stance Fitness Take-Home TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		212E57132C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stance_Fitness_Take_Home_TestUITests.swift; sourceTree = "<group>"; };
 		212E57152C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stance_Fitness_Take_Home_TestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		212E57252C74DAB5001A7A40 /* WorkoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutService.swift; sourceTree = "<group>"; };
+		212E572B2C74E0D9001A7A40 /* WorkoutListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListViewModel.swift; sourceTree = "<group>"; };
+		212E572D2C74E334001A7A40 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		212E57302C74E4C8001A7A40 /* LineGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphView.swift; sourceTree = "<group>"; };
+		212E57332C74E607001A7A40 /* LineGraphViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphViewModel.swift; sourceTree = "<group>"; };
+		212E57352C74E6C8001A7A40 /* WorkoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListView.swift; sourceTree = "<group>"; };
+		212E57382C74E875001A7A40 /* ErrorItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorItem.swift; sourceTree = "<group>"; };
+		212E573B2C74E986001A7A40 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		212E573E2C74E9B1001A7A40 /* WorkoutRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRepository.swift; sourceTree = "<group>"; };
+		212E57412C74EC95001A7A40 /* WorkoutDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutDTO+Mapping.swift"; sourceTree = "<group>"; };
+		212E57442C74EE4E001A7A40 /* WorkoutListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListViewModelTests.swift; sourceTree = "<group>"; };
+		212E57472C74EEAE001A7A40 /* MockWorkoutRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWorkoutRepository.swift; sourceTree = "<group>"; };
+		212E57492C74EF23001A7A40 /* MockError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockError.swift; sourceTree = "<group>"; };
+		212E574C2C74EF75001A7A40 /* WorkoutSet+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutSet+Stub.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				212E57292C74DB6F001A7A40 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +104,7 @@
 				212E57082C74D91D001A7A40 /* Stance Fitness Take-Home TestTests */,
 				212E57122C74D91D001A7A40 /* Stance Fitness Take-Home TestUITests */,
 				212E56F62C74D918001A7A40 /* Products */,
+				212E57272C74DB6F001A7A40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +121,12 @@
 		212E56F72C74D918001A7A40 /* Stance Fitness Take-Home Test */ = {
 			isa = PBXGroup;
 			children = (
+				212E57242C74DA91001A7A40 /* Networking */,
+				212E573D2C74E997001A7A40 /* Repository */,
+				212E573A2C74E977001A7A40 /* Entity */,
+				212E57372C74E86B001A7A40 /* Utils */,
+				212E57232C74DA7C001A7A40 /* Views */,
 				212E56F82C74D918001A7A40 /* Stance_Fitness_Take_Home_TestApp.swift */,
-				212E56FA2C74D918001A7A40 /* ContentView.swift */,
 				212E56FC2C74D91D001A7A40 /* Assets.xcassets */,
 				212E56FE2C74D91D001A7A40 /* Preview Content */,
 			);
@@ -113,7 +144,9 @@
 		212E57082C74D91D001A7A40 /* Stance Fitness Take-Home TestTests */ = {
 			isa = PBXGroup;
 			children = (
-				212E57092C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestTests.swift */,
+				212E574B2C74EF67001A7A40 /* Stub */,
+				212E57462C74EEA7001A7A40 /* Mock */,
+				212E57442C74EE4E001A7A40 /* WorkoutListViewModelTests.swift */,
 			);
 			path = "Stance Fitness Take-Home TestTests";
 			sourceTree = "<group>";
@@ -125,6 +158,99 @@
 				212E57152C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestUITestsLaunchTests.swift */,
 			);
 			path = "Stance Fitness Take-Home TestUITests";
+			sourceTree = "<group>";
+		};
+		212E57232C74DA7C001A7A40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				212E57322C74E4E8001A7A40 /* WorkoutListView */,
+				212E572F2C74E4BB001A7A40 /* LineGraphView */,
+				212E572D2C74E334001A7A40 /* LoadingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		212E57242C74DA91001A7A40 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				212E57402C74EC8A001A7A40 /* DataMapping */,
+				212E57252C74DAB5001A7A40 /* WorkoutService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		212E57272C74DB6F001A7A40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		212E572F2C74E4BB001A7A40 /* LineGraphView */ = {
+			isa = PBXGroup;
+			children = (
+				212E57302C74E4C8001A7A40 /* LineGraphView.swift */,
+				212E57332C74E607001A7A40 /* LineGraphViewModel.swift */,
+			);
+			path = LineGraphView;
+			sourceTree = "<group>";
+		};
+		212E57322C74E4E8001A7A40 /* WorkoutListView */ = {
+			isa = PBXGroup;
+			children = (
+				212E57352C74E6C8001A7A40 /* WorkoutListView.swift */,
+				212E572B2C74E0D9001A7A40 /* WorkoutListViewModel.swift */,
+			);
+			path = WorkoutListView;
+			sourceTree = "<group>";
+		};
+		212E57372C74E86B001A7A40 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				212E57382C74E875001A7A40 /* ErrorItem.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		212E573A2C74E977001A7A40 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				212E573B2C74E986001A7A40 /* Workout.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		212E573D2C74E997001A7A40 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				212E573E2C74E9B1001A7A40 /* WorkoutRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		212E57402C74EC8A001A7A40 /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+				212E57412C74EC95001A7A40 /* WorkoutDTO+Mapping.swift */,
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		212E57462C74EEA7001A7A40 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				212E57492C74EF23001A7A40 /* MockError.swift */,
+				212E57472C74EEAE001A7A40 /* MockWorkoutRepository.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		212E574B2C74EF67001A7A40 /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				212E574C2C74EF75001A7A40 /* WorkoutSet+Stub.swift */,
+			);
+			path = Stub;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +269,9 @@
 			dependencies = (
 			);
 			name = "Stance Fitness Take-Home Test";
+			packageProductDependencies = (
+				212E57282C74DB6F001A7A40 /* Alamofire */,
+			);
 			productName = "Stance Fitness Take-Home Test";
 			productReference = 212E56F52C74D918001A7A40 /* Stance Fitness Take-Home Test.app */;
 			productType = "com.apple.product-type.application";
@@ -198,6 +327,7 @@
 					};
 					212E57042C74D91D001A7A40 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 						TestTargetID = 212E56F42C74D918001A7A40;
 					};
 					212E570E2C74D91D001A7A40 = {
@@ -215,6 +345,9 @@
 				Base,
 			);
 			mainGroup = 212E56EC2C74D918001A7A40;
+			packageReferences = (
+				212E57222C74DA01001A7A40 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 212E56F62C74D918001A7A40 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +390,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				212E56FB2C74D918001A7A40 /* ContentView.swift in Sources */,
+				212E572C2C74E0D9001A7A40 /* WorkoutListViewModel.swift in Sources */,
+				212E573F2C74E9B1001A7A40 /* WorkoutRepository.swift in Sources */,
+				212E57342C74E607001A7A40 /* LineGraphViewModel.swift in Sources */,
+				212E57362C74E6C8001A7A40 /* WorkoutListView.swift in Sources */,
+				212E57392C74E875001A7A40 /* ErrorItem.swift in Sources */,
+				212E57422C74EC95001A7A40 /* WorkoutDTO+Mapping.swift in Sources */,
+				212E57262C74DAB5001A7A40 /* WorkoutService.swift in Sources */,
+				212E573C2C74E986001A7A40 /* Workout.swift in Sources */,
+				212E572E2C74E334001A7A40 /* LoadingView.swift in Sources */,
 				212E56F92C74D918001A7A40 /* Stance_Fitness_Take_Home_TestApp.swift in Sources */,
+				212E57312C74E4C8001A7A40 /* LineGraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +408,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				212E570A2C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestTests.swift in Sources */,
+				212E574D2C74EF75001A7A40 /* WorkoutSet+Stub.swift in Sources */,
+				212E57452C74EE4E001A7A40 /* WorkoutListViewModelTests.swift in Sources */,
+				212E574A2C74EF23001A7A40 /* MockError.swift in Sources */,
+				212E57482C74EEAE001A7A40 /* MockWorkoutRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +492,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +549,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -430,6 +575,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +605,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -477,15 +624,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V66T46872F;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "owen.Stance-Fitness-Take-Home-TestTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stance Fitness Take-Home Test.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Stance Fitness Take-Home Test";
@@ -497,11 +646,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V66T46872F;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "owen.Stance-Fitness-Take-Home-TestTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -588,6 +738,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		212E57222C74DA01001A7A40 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		212E57282C74DB6F001A7A40 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 212E57222C74DA01001A7A40 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 212E56ED2C74D918001A7A40 /* Project object */;
 }
