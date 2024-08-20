@@ -39,6 +39,6 @@ If I had more time, I would:
 
 1. Clone the repository to your local machine:
 
-   ```git clone https://github.com/KaoWenChung/StanceFitnessTakeHomeTest.git```
-   ```cd StanceFitnessTakeHomeTest```
-   ```open StanceFitnessTakeHomeTest.xcodeproj```
+   - ```git clone https://github.com/KaoWenChung/StanceFitnessTakeHomeTest.git```
+   - ```cd StanceFitnessTakeHomeTest```
+   - ```open StanceFitnessTakeHomeTest.xcodeproj```
