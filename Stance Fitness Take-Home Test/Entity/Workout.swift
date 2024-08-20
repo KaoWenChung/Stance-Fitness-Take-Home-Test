@@ -5,8 +5,6 @@
 //  Created by wyn on 2024/8/20.
 //
 
-import Foundation
-
 struct WorkoutSet {
     let reps: [RepData]
 }
