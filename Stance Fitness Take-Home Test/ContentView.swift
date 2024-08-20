@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var workoutSets: [WorkoutSet] = []
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            List(workoutSets.indices, id: \.self) { index in
+                Section(header: Text("Set \(index + 1)")) {
+                    Text("??")
+                }
+            }
+            .navigationTitle("Workout Sessions")
+            .task {
+                do {
+                    workoutSets = try await WorkoutAFServiceImpl().getWorkoutData()
+                } catch {
+                    print("Failed to load data: \(error)")
+                }
+            }
         }
-        .padding()
     }
 }
 
