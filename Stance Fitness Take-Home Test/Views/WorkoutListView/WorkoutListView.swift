@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  WorkoutListView.swift
 //  Stance Fitness Take-Home Test
 //
 //  Created by wyn on 2024/8/20.
@@ -15,7 +15,7 @@ struct WorkoutListView: View {
             NavigationView {
                 List(viewModel.workoutSets.indices, id: \.self) { index in
                     Section(header: Text("Set \(index + 1)")) {
-                        Text("??")
+                        LineGraphView(viewModel: .init(reps: viewModel.workoutSets[index].reps))
                     }
                 }
                 .navigationTitle("Workout Sessions")

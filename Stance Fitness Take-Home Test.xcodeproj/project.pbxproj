@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		212E56F92C74D918001A7A40 /* Stance_Fitness_Take_Home_TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E56F82C74D918001A7A40 /* Stance_Fitness_Take_Home_TestApp.swift */; };
-		212E56FB2C74D918001A7A40 /* WorkoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E56FA2C74D918001A7A40 /* WorkoutListView.swift */; };
 		212E56FD2C74D91D001A7A40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212E56FC2C74D91D001A7A40 /* Assets.xcassets */; };
 		212E57002C74D91D001A7A40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212E56FF2C74D91D001A7A40 /* Preview Assets.xcassets */; };
 		212E570A2C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57092C74D91D001A7A40 /* Stance_Fitness_Take_Home_TestTests.swift */; };
@@ -18,6 +17,9 @@
 		212E57292C74DB6F001A7A40 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 212E57282C74DB6F001A7A40 /* Alamofire */; };
 		212E572C2C74E0D9001A7A40 /* WorkoutListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E572B2C74E0D9001A7A40 /* WorkoutListViewModel.swift */; };
 		212E572E2C74E334001A7A40 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E572D2C74E334001A7A40 /* LoadingView.swift */; };
+		212E57312C74E4C8001A7A40 /* LineGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57302C74E4C8001A7A40 /* LineGraphView.swift */; };
+		212E57342C74E607001A7A40 /* LineGraphViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57332C74E607001A7A40 /* LineGraphViewModel.swift */; };
+		212E57362C74E6C8001A7A40 /* WorkoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212E57352C74E6C8001A7A40 /* WorkoutListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,6 @@
 /* Begin PBXFileReference section */
 		212E56F52C74D918001A7A40 /* Stance Fitness Take-Home Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stance Fitness Take-Home Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		212E56F82C74D918001A7A40 /* Stance_Fitness_Take_Home_TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stance_Fitness_Take_Home_TestApp.swift; sourceTree = "<group>"; };
-		212E56FA2C74D918001A7A40 /* WorkoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListView.swift; sourceTree = "<group>"; };
 		212E56FC2C74D91D001A7A40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		212E56FF2C74D91D001A7A40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		212E57052C74D91D001A7A40 /* Stance Fitness Take-Home TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stance Fitness Take-Home TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +52,9 @@
 		212E57252C74DAB5001A7A40 /* WorkoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutService.swift; sourceTree = "<group>"; };
 		212E572B2C74E0D9001A7A40 /* WorkoutListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListViewModel.swift; sourceTree = "<group>"; };
 		212E572D2C74E334001A7A40 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		212E57302C74E4C8001A7A40 /* LineGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphView.swift; sourceTree = "<group>"; };
+		212E57332C74E607001A7A40 /* LineGraphViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphViewModel.swift; sourceTree = "<group>"; };
+		212E57352C74E6C8001A7A40 /* WorkoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,8 +144,8 @@
 		212E57232C74DA7C001A7A40 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				212E56FA2C74D918001A7A40 /* WorkoutListView.swift */,
-				212E572B2C74E0D9001A7A40 /* WorkoutListViewModel.swift */,
+				212E57322C74E4E8001A7A40 /* WorkoutListView */,
+				212E572F2C74E4BB001A7A40 /* LineGraphView */,
 				212E572D2C74E334001A7A40 /* LoadingView.swift */,
 			);
 			path = Views;
@@ -160,6 +164,24 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		212E572F2C74E4BB001A7A40 /* LineGraphView */ = {
+			isa = PBXGroup;
+			children = (
+				212E57302C74E4C8001A7A40 /* LineGraphView.swift */,
+				212E57332C74E607001A7A40 /* LineGraphViewModel.swift */,
+			);
+			path = LineGraphView;
+			sourceTree = "<group>";
+		};
+		212E57322C74E4E8001A7A40 /* WorkoutListView */ = {
+			isa = PBXGroup;
+			children = (
+				212E57352C74E6C8001A7A40 /* WorkoutListView.swift */,
+				212E572B2C74E0D9001A7A40 /* WorkoutListViewModel.swift */,
+			);
+			path = WorkoutListView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,10 +321,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				212E572C2C74E0D9001A7A40 /* WorkoutListViewModel.swift in Sources */,
+				212E57342C74E607001A7A40 /* LineGraphViewModel.swift in Sources */,
+				212E57362C74E6C8001A7A40 /* WorkoutListView.swift in Sources */,
 				212E57262C74DAB5001A7A40 /* WorkoutService.swift in Sources */,
 				212E572E2C74E334001A7A40 /* LoadingView.swift in Sources */,
-				212E56FB2C74D918001A7A40 /* WorkoutListView.swift in Sources */,
 				212E56F92C74D918001A7A40 /* Stance_Fitness_Take_Home_TestApp.swift in Sources */,
+				212E57312C74E4C8001A7A40 /* LineGraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
